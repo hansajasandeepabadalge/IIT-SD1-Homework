@@ -9,10 +9,8 @@ number = None
 count = 0
 while number != 0:
     number = random.randint(0,10)
+    count += 1
+    print(f"The number {count} is {number}")
     if number == 7:
-        count += 1
-        print("Lucky Number")
-    else:
-        count += 1
-        print(f"The number {count} is {number}")
+        print("Lucky 7")
     
