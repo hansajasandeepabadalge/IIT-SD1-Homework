@@ -10,14 +10,15 @@ after so many guesses (keep count of number of guesses) range for the random num
 import random
 
 count = 0
+ran_num = random.randint(1, 100)
 while True:
     count +=1
-    ran_num = random.randint(1, 100)
     user_input = int(input("Guess the number: "))
-        if user_input == ran_num:
-            print(f"Yes, You are correct. The correct number is {user_input}.")
-            print(f"You get {count} to guess the correct number.")
-        else:
-            print("Try Again.")
+    if user_input == ran_num:
+        print(f"Yes, You are correct. The correct number is {user_input}.")
+        print(f"You get {count} to guess the correct number.")
     else:
-        print("Use only whole number from 1 to 100.")
+        if user_input > ran_num:
+            print("too high")
+        else:
+            print("too low")
