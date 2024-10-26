@@ -67,10 +67,12 @@ def task7():
     print(f"{num}! = {factorial}")
     
 # Question 8: Finding Prime Numbers
-    
+
+
+#Question 8: Number Pattern    
 def task9():
     for i in range(1,6):
-        for j in range (1,6):
-            print(i*str(j))
-            
+        for j in range (i):
+            print(i, end="")
+        print()        
     
